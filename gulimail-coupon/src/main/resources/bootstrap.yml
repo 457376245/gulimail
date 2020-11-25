@@ -1,0 +1,16 @@
+spring:
+  application:
+    name: gulimall-coupon
+  cloud:
+    nacos:
+      config:
+        server-addr: 192.168.31.121:8848
+        namespace: 3f360920-66a9-4f29-ac75-a2e19bdc3719
+        file-extension: yml
+        extension-configs[0]:
+          data-id: datasource.yml
+        extension-configs[1]:
+          data-id: springcloud.yml
+        extension-configs[2]:
+          data-id: other.yml
+        refresh-enabled: true

@@ -1,0 +1,18 @@
+spring:
+  application:
+    name: gulimail-product
+  cloud:
+    nacos:
+      config:
+        server-addr: 192.168.31.121:8848
+        namespace: 37808c26-63ea-4947-b4a8-b71ff1e9e25d
+        file-extension: yml
+        extension-configs[0]:
+          data-id: datasource.yml
+        extension-configs[1]:
+          data-id: springcloud.yml
+        extension-configs[2]:
+          data-id: other.yml
+        extension-configs[3]:
+          data-id: spring-oss-config.yml
+        refresh-enabled: true

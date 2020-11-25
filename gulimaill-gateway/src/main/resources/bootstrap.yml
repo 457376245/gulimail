@@ -1,0 +1,16 @@
+spring:
+  application:
+    name: gulimaill-gateway
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 192.168.31.121:8848
+      config:
+        server-addr: 192.168.31.121:8848
+        namespace: 12096a3f-a2bb-4b98-aa93-388fff982039
+        extension-configs[0]:
+          data-id: other.yml
+        extension-configs[1]:
+          data-id: gate-way-config.yml
+        refresh-enabled: true
+        file-extension: yml

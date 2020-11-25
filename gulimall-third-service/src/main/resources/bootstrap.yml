@@ -1,0 +1,14 @@
+spring:
+  application:
+    name: gulimall-third-service
+  cloud:
+    nacos:
+      config:
+        server-addr: 192.168.31.121:8848
+        namespace: 5630f0ba-4424-44c6-8371-73f8788bcdf9
+        file-extension: yml
+        extension-configs[0]:
+          data-id: oss.yml
+        refresh-enabled: true
+      discovery:
+        server-addr: 192.168.31.121:8848
